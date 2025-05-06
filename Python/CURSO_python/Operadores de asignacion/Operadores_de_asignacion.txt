@@ -1,0 +1,29 @@
+Asignacion (=) -> este operador se encarga de asignarle un valor a la variable que se encuentra
+del lado derecho a la variable que se encuentre del lado izquierdo.
+     
+     x = 5 -> a x se le esta asignando el valor de 5
+
+Asignacion de Suma (+=) -> este operador se asignacion de suma o adicion se implementa con la combinacion
+de los signos +=, asigna en forma de suma a la variable de lado izquierdo, el valor de lado derecho
+
+    x = 3 -> ya tiene asignado el valor 3
+    x += 5 -> con esto se le estaritia sumando 5 entonces quedaria en 8
+
+Asignacion de Resta (-=) -> este operador de asignacion de resta, se implementa con la combinacion
+de los signos -=, asigna en forma de resta a la variable de lado izquierdo, el valor de lado derecho
+
+    x = 8 -> estamos asignado el valor 8
+    x -= 5 -> con esto se le estaritia restando 5. entonces quedaria en 3
+
+Asignacion de Multiplicacion (*=) -> se implementa con la combinacion de los signos *=
+asigna en forma de Multiplicacion a la variable de lado izquierdo, el valor de lado derecho
+    x = 3 -> se le asigna el valor de 3
+    x *= 5 -> se le esta multuplicando 5. Osea quedaria en 15 
+
+Asignacion de divicion (/=)
+
+Asignacion de divicion entera (//=)
+
+Asignacion de exponente (**=)
+
+Asignacion de modulo o resto (%=)

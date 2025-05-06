@@ -1,0 +1,15 @@
+2. Sentencias condicionales compuestas
+
+    if condicion logica:
+        instruccion
+    else:
+        instruccion
+
+num_uno = 10
+
+if num_uno == 5:
+    print("El numero es 5.")
+else:
+    print("El numero NO es 5.")
+    
+print("FIN.")

@@ -1,0 +1,9 @@
+1. sentancias condicionales simples
+    if condicion logica:
+        introduccion
+
+num_uno = 10
+if num_uno ==5:
+    print("El numero es cinco")
+
+print("Fin.")
