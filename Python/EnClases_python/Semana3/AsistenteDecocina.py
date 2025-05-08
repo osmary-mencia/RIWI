@@ -12,7 +12,3 @@ try:
     
 except ValueError:
     print('Ingresa una opcion numerica, por favor:)')
-    
-
-    
-
