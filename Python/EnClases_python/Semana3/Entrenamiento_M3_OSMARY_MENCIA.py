@@ -1,11 +1,12 @@
-#Se crea el inventario vacio como dict que va almacenar los datos ingresados
+#Se crea el inventario vacio como diccionario para almacenar los datos ingresados
 inventario = {}
 
-#Se crea el menu con las opciones 
 
+#Se crea el menu con las opciones 
 def menu():
     
     while True:
+        print('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         print("\n🌸  ＷＥＬＣＯＭＥ   ＴＯ   ＯＳＭＡＲＹ'Ｓ   ＳＨＯＰ 🌸 \n")
         
         print('             ⡷⠂𝙶𝙴𝚂𝚃𝙾𝚁 𝙳𝙴 𝙸𝙽𝚅𝙴𝙽𝚃𝙰𝚃𝙸𝙾⠐⢾\n')
@@ -20,7 +21,7 @@ def menu():
         
 #Se define la variable que le da la opcion al usuario de elegir una opcion del menu
         opcion = input('Ingresa una opcion numerica del menu: ')
-
+                
 #Se crea una condicion para validar la entrada de datos del menu
         if opcion == '1':
             agregar_producto()
@@ -39,94 +40,111 @@ def menu():
             print('Fin del programa.')
             break
         else:
-            print('\nOpcion invalida. Elige una Opcion que este en el menu.\n')
+            print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+            print('¡¡ERROR!!')
+            print('\nOpcion invalida. Elige una opcion numerica que este en el menu.\n')
             
-
+#------------------------------------------------------------------------------------------------
 #Se crea funcion para la opcion de agregar producto
 def agregar_producto():
     
     #Se le pide al usuario que ingrese el nombre del producto
-    nombre_producto = input('Ingresa el nombre del producto: ').strip()
+    nombre_producto = input('\nIngresa el nombre del producto: ').strip().upper()
     
     #Se valida que el producto no exista en el inventario
     if nombre_producto in inventario:
-        print('Este producto ya existe en el inventario.')
+        print('\nEste producto ya existe en el inventario.')
         return 
     
     #Si existe el producto entonces se valida la entrada para del precio y cantidad
     try:
-        precio_producto = float(input('El precio es: '))
+        precio_producto = float(input('PRECIO: '))
         if precio_producto < 0:
-            print('El precio no puede ser negativo.')
+            print('\nEl precio no puede ser negativo.')
             return
-        cantidad_producto = int(input('La cantidad es: '))
+        cantidad_producto = int(input('CANTIDAD: '))
         if cantidad_producto < 0:
-            print('La cantidad no puede ser negativa.')
+            print('\nLa cantidad no puede ser negativa.')
             return
     except ValueError:
-        print('Entrada inválida. Debes ingresar números.')
+        print('\nEntrada inválida. Debes ingresar números.')
         return
 
-#se almacena el preducto en el inventario
+#se almacena el preducto en el inventario y le retornamos un mensaje al usuario
     inventario[nombre_producto] = (precio_producto, cantidad_producto)
     print("Producto agregado correctamente.")
 
+#------------------------------------------------------------------------------------------------
 #Se crea funcion para la opcion de consultar un producto
 def consultar_producto():
     
-    nombre_producto = input('Ingresa el nombre del producto que deseas buscar: ').strip()
+    nombre_producto = input('\nIngresa el nombre del producto que deseas buscar: ').strip().upper()
     producto = inventario.get(nombre_producto)
     
     if producto:
         print(f' PRODUCTO: {nombre_producto}\n PRECIO: {producto[0]:.2f}\n CANTIDAD: {producto[1]}')
     else:
-        print(f"El producto {nombre_producto} no existe en el inventario.")
+        print(f'\nEl producto {nombre_producto} no existe en el inventario.')
 
+#------------------------------------------------------------------------------------------------
 #Se crea funcion para cambiar el precio de un producto
 def cambiar_precio():
     #Le pedimos al usuario que ingrese el nombre del producto al que le quiere cambiar el nombre
-    nombre_producto = input('Ingresa el nombre del producto que deseas modificarle el precio: ').strip()
+    nombre_producto = input('\nIngresa el nombre del producto que deseas modificarle el precio: ').strip().upper()
     
-    # verificamos que el nombre se encuentre en el inventario para poder cambiarle el nombre
+    # verificamos que el nombre se encuentre en el inventario para poder cambiarle el precio
     if nombre_producto in inventario:
         try:
             nuevo_precio = float(input('Ingresa el nuevo precio: '))
+            
+            #Si el usuario ingresa un numero negativo le retornamos un mensaje de error.
             if nuevo_precio < 0:
-                print('El precio no puede ser negativo.')
+                print('\n¡¡ERROR!! El precio no puede ser negativo.')
                 return
+            #Si usuario ingresda letras en el precio le retornamos error
         except ValueError:
-            print('Entrada inválida. Debes ingresar un número.')
+            print('\nEntrada inválida. Debes ingresar un número.')
             return
 
+#actualizamos el precio del producto
         cantidad_actual = inventario[nombre_producto][1]
         inventario[nombre_producto] = (nuevo_precio, cantidad_actual)
-        print('Precio actualizado.')
+        print('\nPrecio actualizado.')
+        
 #Si no esta el retornamos un mesaje que el producto no se encuentra en el inventario
     else:
-        print('El producto no existe en el inventario')
-
-#Creamos funcio para eliminar el producto que el usuario desee
+        print('\nLO SIENTO! Este producto no existe en el inventario')
+        
+#------------------------------------------------------------------------------------------------
+#Se crea funcion para eliminar el producto que el usuario desee
 def eliminar_producto():
     #le pedimos al usuario el nombre del producto
-    nombre_producto = input("Ingresa el producto a eliminar: ").strip()
+    nombre_producto = input("\nIngresa el nombre del producto a eliminar: ").strip().upper()
     
     #verificamos que el producto este en el inventario
     if nombre_producto in inventario:
         del inventario[nombre_producto]
-        print('El producto se elimino del inventario.')
+        print('\nEl producto se elimino del inventario.')
     #Si no esta le retornamos un mesaje
     else:
-        print('Este producto no existe')
+        print('\nEste producto no existe en el invetario')
 
-#creamos funcion para 
+#------------------------------------------------------------------------------------------------
+#Se crea funcion para mostar todo el inventario
 def mostrar_inventario():
+    
+#si no se ha ingresado nada y el usuario quiere ir el inventario re retorna un mensaje 
     if not inventario:
-        print('El inventario está vacío.')
+        print('\nEl inventario está vacío.')
+    
+#si se valida que si hay productos en el inventario lo mostramos
     else:
-        print('\nLista del inventario:')
+        print('\nLista del inventario:\n')
         for nombre_producto, (precio_producto, cantidad_producto) in inventario.items():
             print(f'{nombre_producto}: ${precio_producto:.2f} | Cantidad: {cantidad_producto}')
-            
+#---------------------------------------------------------------------------------------------------
+
+#Se crea funcion para calcular el valor total de los productos del inventario            
 def calcular_valorTotal_inventario():
     if not inventario:
         print('El inventario está vacío.')
