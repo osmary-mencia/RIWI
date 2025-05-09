@@ -82,7 +82,7 @@ def consultar_producto():
     producto = inventario.get(nombre_producto)
     
     if producto:
-        print(f' PRODUCTO: {nombre_producto}\n PRECIO: {producto[0]:.2f}\n CANTIDAD: {producto[1]}')
+        print(f'\n PRODUCTO: {nombre_producto}\n PRECIO: {producto[0]:.2f}\n CANTIDAD: {producto[1]}')
     else:
         print(f'\nEl producto {nombre_producto} no existe en el inventario.')
 
