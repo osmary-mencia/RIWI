@@ -1,0 +1,7 @@
+🔄 while vs for en Python
+Ambos son ciclos (bucles), pero tienen usos diferentes:
+
+Ciclo   |	Se usa cuando...
+
+for     |   Sabes cuántas veces quieres repetir algo
+while	|   Repites mientras una condición sea verdadera
