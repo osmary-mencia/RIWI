@@ -1,0 +1,126 @@
+✅ 2. ¿Qué hace inventory.get(name) y por qué no usamos directamente inventory[name]?
+Tu respuesta:
+
+get busca los el nombre ingresado en el inventario y delvuelve como resultado la clave el valor que esta contiene no usamos inventory[name] porque esto devolveria todas las claves que almacena name.
+
+Corrección (más preciso):
+✔️ inventory.get(name) busca la clave con ese nombre en el diccionario.
+✔️ Si la clave existe, devuelve el valor (es decir, el diccionario con price y amount).
+✔️ Si no existe, devuelve None, lo cual permite manejar el caso sin que el programa se caiga.
+❌ inventory[name] genera un error si la clave no existe. Por eso, .get() es más seguro.
+
+✅ 3. ¿Qué pasa si el producto no está en el inventario? ¿Cómo responde el programa?
+Tu respuesta:
+
+si el producto no esta en el inventario el get toma el valor none y retorna un mensaje amigable de que el producto no existe en el inventario
+
+✔️ ¡Muy bien! Exactamente así. Si get(name) devuelve None, se muestra el mensaje:
+
+❌ The product doesn't exist in inventory
+
+✅ 4. ¿Qué tipo de dato tiene la variable product si el producto sí existe?
+Tu respuesta:
+
+tiene los datos clave valor del producto encomtrado
+
+Corrección:
+✔️ Es un diccionario anidado, con dos claves internas: 'price' y 'amount'.
+🔹 Ejemplo:
+product = {'price': 2.5, 'amount': 10}
+
+1. ¿Qué función tiene strip().upper() en la entrada del nombre del producto?
+✅ Respuesta:
+El método .strip() elimina los espacios en blanco al inicio y al final del texto, lo cual es útil si el usuario accidentalmente deja espacios.
+El método .upper() convierte el texto a mayúsculas para que la búsqueda del producto sea uniforme y no haya errores por diferencias 
+de mayúsculas y minúsculas.
+👉 Esto asegura que, por ejemplo, "pan", " Pan " y "PAN" se traten como el mismo nombre.
+
+2. ¿Qué pasaría si no verificamos si el producto existe antes de usar del?
+❌ Respuesta:
+Si intentamos eliminar un producto que no existe en el diccionario con del inventory[name], Python mostrará un error llamado KeyError y el programa se detendrá.
+✅ Por eso usamos if name in inventory: antes, para verificar su existencia y evitar que el programa falle.
+
+3. ¿Por qué es importante dar un mensaje de confirmación al usuario?
+✅ Respuesta:
+Es importante para que el usuario tenga una respuesta clara sobre lo que ocurrió:
+
+Si el producto fue eliminado correctamente, le informamos que tuvo éxito.
+
+Si el producto no existe, evitamos que el usuario piense que se eliminó algo o que ocurrió un error.
+👉 Esto mejora la experiencia del usuario y evita confusiones.
+
+4. ¿Qué estructura de datos se está modificando en esta función?
+✅ Respuesta:
+Se está modificando el diccionario global inventory, que almacena los productos del inventario.
+Cada vez que eliminamos un producto con del inventory[name], estamos quitando una clave (nombre del producto)
+ y su valor asociado (precio y cantidad) del diccionario.
+-----------------------------------------------------------------------------------------------------------------
+✅ 1. Función lambda calculate_total_values
+
+calculate_total_values = lambda inv: sum(info['price'] * info['amount'] for info in inv.values())
+
+🔹 ¿Qué hace?
+Es una función anónima (lambda) que calcula el valor total del inventario.
+Toma como parámetro inv, que representa el diccionario de productos (inventory).
+
+🔹 ¿Cómo lo hace?
+
+Recorre todos los valores del diccionario (inv.values()), que son los diccionarios internos con 'price' y 'amount'.
+
+Multiplica el precio (info['price']) por la cantidad (info['amount']) para cada producto.
+
+Luego suma todos esos resultados con sum(...).
+
+🔹 Ejemplo práctico:
+Si tienes:
+
+inventory = {'PAN': {'price': 2.0, 'amount': 5}, 'LECHE': {'price': 1.5, 'amount': 4}}
+Entonces:
+
+(2.0 × 5) + (1.5 × 4) = 10 + 6 = 16.0 
+------------------------------------------------------------------------------------------------------------------
+✅ 1. ¿Qué significa inv.values() dentro de la función lambda?
+inv.values() obtiene solo los valores del diccionario inv.
+En este caso, cada valor es un diccionario interno que representa un producto con sus datos, como por ejemplo:
+
+{'price': 2.5, 'amount': 10}
+Entonces, al hacer for info in inv.values(), estamos recorriendo directamente cada producto con su precio y cantidad.
+
+✅ 2. ¿Qué pasaría si no usamos .2f al mostrar los precios?
+Si no usamos .2f, los precios podrían mostrarse con muchos decimales o sin ningún formato, como por ejemplo:
+
+Precio: $2.5
+Precio: $3.1415926535
+Usar .2f asegura que todos los precios se muestren con exactamente 2 decimales, lo cual da una presentación más profesional y clara:
+
+Precio: $2.50
+Precio: $3.14
+✅ 3. ¿Qué tipo de estructura tiene cada valor dentro del diccionario inventory?
+Cada valor en el diccionario inventory es otro diccionario.
+Específicamente, cada producto tiene un diccionario con dos claves:
+
+'inventory' = {
+  'PAN': {'price': 2.0, 'amount': 5},
+  'LECHE': {'price': 1.5, 'amount': 4}
+}
+Es decir, usamos diccionarios anidados.
+
+✅ 4. ¿Por qué crees que es útil mostrar el inventario en forma de tabla?
+Mostrar el inventario en forma de tabla:
+
+📋 Hace más fácil comparar productos.
+
+👀 Organiza mejor la información.
+
+💻 Parece más profesional y claro para el usuario.
+
+✅ Ayuda a ver rápidamente qué productos hay, cuántos, y a qué precio.
+
+✅ 5. ¿Qué hace exactamente la línea if not inventory:?
+Verifica si el diccionario inventory está vacío.
+
+Si está vacío ({}), la condición se cumple y muestra un mensaje de que no hay productos.
+
+Si tiene contenido, continúa con el resto de la función.
+
+Es una forma muy común en Python de comprobar si una estructura como una lista o diccionario está vacía.
