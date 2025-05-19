@@ -231,11 +231,12 @@ def calculate_productos_inventory():
     else:
         # Muestra encabezados en tabla:
         # Usa formateo para alinear texto como si fuera una tabla.
+        # <20 indica que el texto se alineara a la izquierda 20 es el ancho total de espacio reservadopara este texto
         print(f"\n{'Product':<20}{'Price ($)':<12}{'Amount':<10}")
         print('-' * 45)
         # Muestra cada producto:
         # Recorre el inventario con .items() y separa name y datas.
-        # Muestra nombre, precio (con 2 decimales), y cantidad.
+        # Muestra nombre, precio (con 2 decimales), y cantidad.  
         for name, datas in inventory.items():
             print(f"{name:<20}${datas['price']:<12.2f}{datas['amount']:<10}")
         
