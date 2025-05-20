@@ -1,0 +1,96 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #54a7ff;
+    color: white;
+    padding: 15px 0;
+    /* z-index: 1000; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav  ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  color: #000000;
+}
+
+.descripcion {
+
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.contenedor-imagen {
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+img {
+  width: 250px;
+  height: auto;
+  max-width: 100%;
+  }
+
+footer {
+  background-color: #54a7ff;
+  justify-content: center;
+  display: flex;
+  gap: 500px;
+}
+
+.icons{
+  height: 20px;
+  width: 20px;
+}
+
+.icons_redes{
+  height: 40px;
+  width: 40px;
+}
+
+.iconos_redes{
+  display: flex;
+  gap: 100px;
+}
