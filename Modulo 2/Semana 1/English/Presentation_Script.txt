@@ -1,0 +1,49 @@
+🗣️ Web Developer – Presentation Script (A1 Level)
+🟢 1. Introduction
+Hello. My name is [tu nombre].
+Today, I want to talk about the job of a Web Developer.
+________________________________________
+🟢 2. Responsibilities
+Web Developers have many tasks.
+They design websites and keep them working.
+They also test the websites, fix problems, and work with servers.
+Now, I will tell you more about their main responsibilities.
+They:
+1.	Design and make websites
+2.	Fix and update websites
+3.	Connect websites with servers and databases
+4.	Test websites and fix errors
+5.	Use good safety rules
+6.	Write notes about the code
+7.	Work with a team
+________________________________________
+🟢 3. Skills
+To be a Web Developer, you need these skills:
+•	Clear communication and teamwork
+•	Creativity to solve problems
+•	Learning every day, because technology changes fast
+•	Organization and attention to detail
+________________________________________
+🟢 4. A Type of Web Developer: Frontend Developer
+A Frontend Developer works on what the user sees.
+They make the buttons, colors, and layout of the website.
+This is called the client side.
+They use:
+🔤 Languages and technologies:
+•	HTML – for the page structure
+•	CSS – for colors, fonts, and layout
+•	JavaScript – for interactivity (clicks, animations)
+📦 Tools and frameworks:
+•	React, Vue.js, Angular – JavaScript libraries and frameworks
+•	Bootstrap, Tailwind CSS – for fast and responsive design
+•	SASS/SCSS – tools to improve CSS
+________________________________________
+🟢 5. Importance
+This job is important.
+Today, many people and companies need websites.
+A Web Developer helps people go online.
+They make websites easy to use and safe.
+________________________________________
+🟢 6. Conclusion
+Thank you for listening.
+I hope you liked my presentation about Web Development.
