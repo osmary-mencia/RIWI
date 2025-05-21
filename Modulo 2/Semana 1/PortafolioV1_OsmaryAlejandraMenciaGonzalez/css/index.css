@@ -12,9 +12,8 @@ nav {
     top: 0;
     width: 100%;
     background-color: #54a7ff;
-    color: white;
-    padding: 15px 0;
-    /* z-index: 1000; */
+    color: #000000;
+    padding: 20px 0;
 }
 
 nav ul {
@@ -28,10 +27,10 @@ nav  ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 12px;
+    padding: 10px 12px;
 
 }
 
@@ -43,28 +42,20 @@ nav ul li a:hover {
 main {
     max-width: 900px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 50px 50px;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    box-shadow: 0 0 10px #e238381a;
 }
+
 h1 {
   color: #000000;
 }
 
 .descripcion {
-
   font-size: 20px;
   text-align: center;
   margin: 20px;
-}
-
-.contenedor-imagen {
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: inline-block;
 }
 
 img {
@@ -77,20 +68,42 @@ footer {
   background-color: #54a7ff;
   justify-content: center;
   display: flex;
-  gap: 500px;
+  gap: 600px;
+  padding: 10px 0;
+}
+.contac1{
+  display: flex;
 }
 
+.contac1 img{
+  margin-top: 10px;
+  margin: 10px;
+}
+
+.contac2{
+  display: flex;
+
+}
+.contac2 img{
+  margin-top: 10px;
+  margin: 10px;
+}
+.contac3{
+  display: flex;
+}
+.contac3 img{
+  margin-top: 10px;
+  margin: 10px;
+}
 .icons{
   height: 20px;
   width: 20px;
 }
 
 .icons_redes{
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 60px;
+  gap: 100px;
+  margin: 0 18px;
 }
 
-.iconos_redes{
-  display: flex;
-  gap: 100px;
-}
