@@ -1,0 +1,217 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #54a7ff;
+    color: #000000;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav  ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 12px;
+
+}
+
+nav ul li a:hover {
+    border-radius: 4px;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 50px;
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0 0 10px #e238381a;
+}
+/* Mejorar lista de habilidades */
+main ul {
+  list-style: none;       /* Quitar viñetas */
+  padding: 0;
+  display: flex;          /* Poner en fila */
+  justify-content: center;
+  gap: 40px;              /* Espacio entre habilidades */
+  margin-top: 20px;
+}
+
+main ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120px;
+  text-align: center;
+}
+
+.habilidades {
+  margin-bottom: 10px;
+  border-radius: 8px; /* Opcional: bordes redondos a las imágenes */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+h1 {
+  color: #000000;
+}
+
+.descripcion {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+footer {
+  background-color: #54a7ff;
+  justify-content: center;
+  display: flex;
+  gap: 600px;
+  padding: 10px 0;
+}
+.contac1{
+  display: flex;
+}
+
+.contac1 img{
+  margin-top: 10px;
+  margin: 10px;
+}
+
+.contac2{
+  display: flex;
+
+}
+.contac2 img{
+  margin-top: 10px;
+  margin: 10px;
+}
+.contac3{
+  display: flex;
+}
+.contac3 img{
+  margin-top: 10px;
+  margin: 10px;
+}
+.icons{
+  height: 20px;
+  width: 20px;
+}
+
+.icons_redes{
+  height: 80px;
+  width: 60px;
+  gap: 100px;
+  margin: 0 18px;
+}
+
+/* Estilos para centrar y decorar la tabla de proyectos */
+table {
+  margin: 30px auto;       /* Centra la tabla horizontalmente */
+  border-collapse: collapse;
+  width: 80%;              /* Ancho al 80% del contenedor */
+  max-width: 700px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+table th,
+table td {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #54a7ff;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table a {
+  color: #54a7ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el formulario de contacto */
+main form {
+  max-width: 500px;       /* Ancho máximo para el formulario */
+  margin: 40px auto;      /* Centrar horizontalmente con margen arriba/abajo */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+main form label {
+  display: block;        /* Para que cada etiqueta esté en línea propia */
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333333;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form textarea {
+  width: 100%;            /* Que ocupe todo el ancho del formulario */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Para que el padding no aumente el ancho total */
+  transition: border-color 0.3s ease;
+}
+
+main form input[type="text"]:focus,
+main form input[type="email"]:focus,
+main form textarea:focus {
+  border-color: #54a7ff;
+  outline: none;
+}
+
+main form input[type="submit"] {
+  background-color: #54a7ff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+main form input[type="submit"]:hover {
+  background-color: #428bd4;
+}

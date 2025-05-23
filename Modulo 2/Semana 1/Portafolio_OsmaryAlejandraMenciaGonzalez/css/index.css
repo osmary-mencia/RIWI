@@ -1,7 +1,4 @@
-*{
-  padding: 0;
-  box-sizing: border-box;
-}
+
 body {
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
@@ -35,7 +32,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
 }
 
@@ -59,7 +55,6 @@ h1 {
 }
 
 img {
-  width: 250px;
   height: auto;
   max-width: 100%;
   }

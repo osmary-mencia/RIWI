@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Contacto directo</title>
+  <meta name="description" content="Portafolio personal de Osmary como desarrolladora Riwi." />
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="sobre_mi.html">Sobre mí</a></li>
+      <li><a href="mis_proyectos.html">Mis proyectos</a></li>
+      <li><a href="mis_habilidades.html">Mis habilidades</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form action="/sent" method="post">
+      <label for="name">Nombre:</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="message">Mensaje:</label>
+      <textarea name="message" id="message" rows="4" required></textarea>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="padre">
+      <h1>Contacto</h1>
+
+      <div class="contac1">
+        <img src="css/hogar.svg" alt="icono casita" class="icons" />
+        <p>Cra 12 #13-18, La Playa, Barranquilla.</p>
+      </div>
+
+      <div class="contac2">
+        <img src="css/llamada-telefonica.svg" alt="icono de llamada" class="icons" />
+        <p>Teléfono: +57 3023095905</p>
+      </div>
+
+      <div class="contac3">
+        <img src="css/sobre.svg" alt="icono de gmail" class="icons" />
+        <p>Correo electrónico: osmarymencias@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="iconos_redes">
+      <h1>Redes sociales</h1>
+      <a href="https://www.instagram.com/osmyshy_?igsh=MWFlZG96ZnRpMWxsdQ==" target="_blank" rel="noopener noreferrer">
+        <img src="css/instagram.svg" alt="icono Instagram" class="icons_redes" />
+      </a>
+      <a href="https://github.com/osmary-mencia" target="_blank" rel="noopener noreferrer">
+        <img src="css/github.svg" alt="icono de GitHub" class="icons_redes" />
+      </a>
+      <a href="https://discord.com/users/osmarymencia" target="_blank" rel="noopener noreferrer">
+        <img src="css/discord.svg" alt="icono de Discord" class="icons_redes" />
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
