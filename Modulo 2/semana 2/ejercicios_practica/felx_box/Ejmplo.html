@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de Box Shadow</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .tarjeta {
+      background-color: white;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 10px 10px 25px rgba(4, 41, 207, 0.2); /* Aquí se aplica la sombra */
+    }
+
+    .tarjeta h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .tarjeta p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="tarjeta">
+    <h2>Hola, soy una tarjeta</h2>
+    <p>Esta tarjeta tiene una sombra usando <code>box-shadow</code>.</p>
+  </div>
+</body>
+</html>
