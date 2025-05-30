@@ -101,12 +101,11 @@
 
      table th, table td {
         padding: 12px 20px;
-        border: 1px solid #000000;
+        border: 1px solid #666666;
      }
 
      table th {
-        background-color: #e7004b;
-        color: white;
+        color: #e7004b;
         font-weight: bold;
      }
 
@@ -129,32 +128,21 @@
      }
 
     /* Estilo para la imagen */
-     #autor img {
-        width: 150px;
-        height: auto;
+     .foto-autor{
         border-radius: 50%; 
-        object-fit: cover;
     }
 
-    /* Contenedor del texto */
-     #autor div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-     }
      .redes-autor {
         margin-top: 10px;
+        justify-content: left;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        gap: 15px;
-        align-items: center;
-     }
+        gap: 25px;
+      }
 
-     .icono-red {
-        width: 30px;
-        height: 30px;
+      .icono-red {
         transition: transform 0.3s ease;
+        width: 30px;
      }
 
      .icono-red:hover {
