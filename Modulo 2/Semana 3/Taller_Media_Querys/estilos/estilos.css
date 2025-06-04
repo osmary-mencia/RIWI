@@ -52,12 +52,8 @@
      header h1 {
         font-size: 4rem;
        }
-     
-     main {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: 20px;
-       }
+
+
 
      /* Artículos */
      article {
@@ -67,8 +63,23 @@
         border: 1px solid #ddd;
         box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
         margin-bottom: 20px;
-     }
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+      }
+      
+      .columna {
+         margin: 20px;
+         background: rgb(173, 173, 173);
+         color: #ffffff;
+         border-radius: 25px;
+       }
 
+
+
+       .columna li,h2{
+         list-style: none;
+         text-align: center;
+       }
 
 
 
