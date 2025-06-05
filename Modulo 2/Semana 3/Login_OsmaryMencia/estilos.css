@@ -131,6 +131,7 @@ a {
 
 .login-box .remember-forgot label {
     display: flex;
+    justify-content: space-between;
 }
 
 .login-box .remember-forgot label input {
