@@ -1,0 +1,219 @@
+/* Estilos generales para el cuerpo de la página */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+/* Estilos para header */
+header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  align-items: center;
+  background-color: #09f;
+  color: #000;
+  padding: 1rem;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.8rem;
+}
+/* Estilos para la barra de navegación */
+nav a {
+  color: #000;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Animación de entrada main*/
+@keyframes entrada {
+from {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+/* Estilos para el contenido principal */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 50px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #e238381a;
+  text-align: center;
+  animation: entrada 1s ease-in-out;
+}
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+/* Estilos para títulos principales */
+h2 {
+  color: #000000;
+  text-align: center;
+}
+
+/* Estilos para parrafos */
+.descripcion {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Estilos para imagen */
+.img {
+  height: auto;
+  width: 250px;
+  border-radius: 50px;
+}
+
+/* Estilos del pie de página */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Estilos para la tabla de proyectos */
+table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+table th, table td {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #54a7ff;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table a {
+  color: #54a7ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el formulario de contacto */
+main form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  flex-direction: column;
+}
+
+main form label {
+
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333333;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+main form input[type="text"]:focus,
+main form input[type="email"]:focus,
+main form textarea:focus {
+  border-color: #54a7ff;
+  outline: none;
+}
+
+main form input[type="submit"] {
+  background-color: #54a7ff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+main form input[type="submit"]:hover {
+  background-color: #428bd4;
+}
+
+/* Tamaño y separación de los íconos de redes */
+.icons_redes {
+  justify-content: center;
+  height: 80px;
+  width: 60px;
+  gap: 100px;
+  margin: 0 18px;
+}
+
+
+/*  RESPONSIVE MEDIA QUERIES  */
+@media (max-width: 480px) {
+  header, table {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav, main {
+    margin-top: 1rem;
+  }
+
+  section:nth-of-type(1) {
+    grid-template-columns: 1fr;
+  }
+}
