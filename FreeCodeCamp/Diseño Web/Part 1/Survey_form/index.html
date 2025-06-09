@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form">
+
+    <label for="name" id="name-label">Enter Your Name: 
+      <input name="name" type="text" id="name" placeholder="Maria" required>
+    </label>
+
+    <label for="email" id="email-label">Enter Your Email: 
+      <input name="email" type="email" id="email" placeholder="mariajose@gmail.com" required>
+    </label>
+
+    <label for="number" id="number-label">Input your Age (years): 
+      <input type="number" name="number" id="number" placeholder="20" min="10" max="120" required>
+    </label>
+
+    <label for="dropdown">What is your favorite programming language?
+      <select name="language" id="dropdown" required>
+        <option value="">Select one</option>
+        <option value="1">Python</option>
+        <option value="2">Java</option>
+        <option value="3">JavaScript</option>
+        <option value="4">Other</option>
+      </select>
+    </label>
+
+    <fieldset>
+      <legend>What do you prefer? (required)</legend>
+      <label >
+        <input class="personal-language" type="radio" name="language-type" value="frontend" required> Front-end
+      </label>
+      <label>
+        <input class="personal-language" type="radio" name="language-type" value="backend"> Back-end 
+      </label>
+      <label>
+        <input class="personal-language" type="radio" name="language-type" value="fullstack"> Full-Stack
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Where would you like to work?</legend>
+      <input type="checkbox" class="input-checkbox" name="work" id="amazon" value="amazon" checked>  
+      <label for="amazon">Amazon</label>
+
+      <input type="checkbox" class="input-checkbox" name="work" id="apple" value="apple">
+      <label for="apple">Apple</label>
+
+      <input type="checkbox" class="input-checkbox" name="work" id="google" value="google">
+      <label for="google">Google</label>
+    </fieldset>
+
+    <label for="about">Tell us a little about yourself 
+      <textarea id="about" class="input-textarea" name="about" rows="3" cols="30" placeholder="I like coding..." required></textarea>
+    </label>
+
+    <input type="submit" id="submit" value="Submit">
+
+  </form>
+  
+</body>
+</html>

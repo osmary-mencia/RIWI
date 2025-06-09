@@ -1,0 +1,62 @@
+
+.container {
+    display: flex;
+    margin: 100px 150px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 12px;
+}
+
+.login {
+    width: 600px;
+    height: 600px;
+    background-color: antiquewhite;
+    color: black;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.website {
+    width: 600px;
+    height: 600px;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.website h2 {
+    text-transform: capitalize;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.website p {
+    margin: 50px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+}
+
+.login h2 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 2rem;
+}
+
+.login div {
+    display: grid;
+    margin: 50px 150px;
+}
+
+#input {
+    padding: 10px;
+    margin-top: 10px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: g;
+    border: 0px;
+}

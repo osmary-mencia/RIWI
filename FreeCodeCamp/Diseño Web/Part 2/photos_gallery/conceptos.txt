@@ -1,0 +1,32 @@
+Paso 15
+Flexbox tiene un eje principal y otro transversal. El eje principal está definido por la propiedad flex-direction, que tiene cuatro valores posibles:
+
+row (por defecto): eje horizontal con elementos flex de izquierda a derecha
+row-reverse: eje horizontal con elementos flex de derecha a izquierda
+column: eje vertical con elementos flexibles de arriba a abajo
+column-reverse: eje vertical con elementos flexibles de abajo a arriba
+Nota: Los ejes y direcciones serán diferentes dependiendo de la dirección del texto. Los valores mostrados son para una dirección de texto de izquierda a derecha.
+
+Pruebe los diferentes valores para ver como afectan al diseño.
+
+Cuando hayas terminado, establece un flex-direction explícito de row en el elemento .gallery.
+
+Paso 16
+La propiedad flex-wrap determina como se comportan tus elementos flex cuando el contenedor flex es demasiado pequeño. Si se establece como wrap, los elementos se colocan en la siguiente fila o columna. nowrap (por defecto) evitará que los elementos se coloquen en varias líneas y los encogerá si es necesario.
+
+Paso 18
+La propiedad align-items posiciona el contenido flex a lo largo del eje transversal. En este caso, con tu flex-direction establecido en row, el eje transversal sería vertical.
+
+Para centrar verticalmente tus imágenes, dale a tu selector .gallery una propiedad align-items con el valor center.
+
+Observe como algunas de sus imágenes se han distorsionado. Esto se debe a que las imágenes tienen diferentes relaciones de aspecto. En lugar de establecer cada relación de aspecto individualmente, puedes utilizar la propiedad object-fit para determinar como deben comportarse las imágenes.
+
+Dale a tu selector .gallery img la propiedad object-fit establecida en cover. Esto le dirá a la imagen que llene el contenedor img mientras mantiene la
+
+Paso 21
+Tus imágenes necesitan algo de espacio entre ellas.
+
+La propiedad abreviada CSS gap especifica los espacios, también conocidos como canales, entre filas y columnas. La propiedad gap y sus subpropiedades row-gap y column-gap proporcionan esta funcionalidad para los diseños flex, grid, y multicolumna. La propiedad se aplica al elemento contenedor.
+
+Dale a tu contenedor flex .gallery una propiedad gap con un valor de 16px.
+
