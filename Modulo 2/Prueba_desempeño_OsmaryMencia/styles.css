@@ -84,7 +84,7 @@ h2 {
   margin: 20px;
 }
 
-/* Estilos para imagen */
+/* Estilos para imagen */ 
 .img {
   height: auto;
   width: 250px;
@@ -98,14 +98,15 @@ footer {
   color: black;
   text-align: center;
   border-radius: 6px;
+  
 }
 
 /* Estilos para la tabla de proyectos */
 table {
   margin: 30px auto;
   border-collapse: collapse;
-  width: 80%;
-  max-width: 700px;
+  width: 50%;
+  max-width: 500px;
   text-align: center;
   font-family: Arial, sans-serif;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
